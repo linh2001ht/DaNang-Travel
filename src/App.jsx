@@ -5,16 +5,18 @@ import Navbar from "./components/Navbar";
 import Recommend from "./components/Recommend";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
+import Top from "./components/Top"
 import Testimonials from "./components/Testimonials";
+import Subcribe from "./components/Subcribe"
 export default function App() {
   return (
     <div>
       <ScrollToTop />
       <Navbar />
       <Hero />
-      <Services />
+      <Top />
       <Recommend />
-      <Testimonials />
+      <Subcribe></Subcribe>
       <Footer />
     </div>
   );

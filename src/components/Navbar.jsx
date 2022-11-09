@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { VscChromeClose} from "react-icons/vsc";
+import { VscChromeClose } from "react-icons/vsc";
 import { BsHandbag, BsPerson } from "react-icons/bs";
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
@@ -38,12 +38,12 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="user">
-        <div className="bag">
-        <BsHandbag></BsHandbag>
-        </div>
-        <div className="bag">
-        <BsPerson></BsPerson>
-        </div>
+          <div className="bag">
+            <BsHandbag></BsHandbag>
+          </div>
+          <div className="bag">
+            <BsPerson></BsPerson>
+          </div>
         </div>
 
       </Nav>
@@ -101,7 +101,7 @@ const Nav = styled.nav`
     li {
       a {
         text-decoration: none;
-        color: #0077b6;
+        color: black;
         font-size: 1.2rem;
         transition: 0.1s ease-in-out;
         &:hover {

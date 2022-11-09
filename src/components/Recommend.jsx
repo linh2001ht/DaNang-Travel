@@ -67,7 +67,7 @@ export default function Recommend() {
   return (
     <Section id="recommend">
       <div className="title">
-        <h2>Recommended Destinations</h2>
+        <h2>Recommended for you</h2>
       </div>
       <div className="packages">
         <ul>
@@ -128,7 +128,7 @@ const Section = styled.section`
         border-bottom: 0.1rem solid black;
       }
       .active {
-        border-bottom: 0.5rem solid #8338ec;
+        border-bottom: 0.5rem solid #3B71FE;;
       }
     }
   }
@@ -142,7 +142,7 @@ const Section = styled.section`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      background-color: #8338ec14;
+      background-color: aliceblue;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       &:hover {
@@ -160,7 +160,7 @@ const Section = styled.section`
           gap: 0.3rem;
           img {
             border-radius: 1rem;
-            background-color: #4d2ddb84;
+            background-color: #3B71FE;;
             width: 2rem;
             /* padding: 1rem; */
             padding: 0.3rem 0.4rem;

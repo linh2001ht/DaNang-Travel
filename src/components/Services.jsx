@@ -25,46 +25,46 @@ export default function Services() {
       icon: img3,
       title: "Phan Quang Linh",
       subTitle:
-      "Team Member",
+        "Team Member",
     },
     {
       icon: img4,
       title: "Le Cong Phuc",
       subTitle:
-      "Team Member",
+        "Team Member",
     },
     {
       icon: img5,
       title: "Hoang Trong Thai",
       subTitle:
-      "Team Member",
+        "Team Member",
     },
     {
       icon: img6,
       title: "Phan Huu Minh Tri",
       subTitle:
-      "Team Member",
+        "Team Member",
     },
   ];
   return (
     <div>
-      <div id="about" style={{textAlign: "center", marginTop: "2rem"}}>
+      <div id="about">
         <h2>Meet Our Team</h2>
       </div>
-          <Section id="services">
-      {data.map((service, index) => {
-        return (
-          
+      <Section id="services">
+        {data.map((service, index) => {
+          return (
+
             <div className="service">
-            <div className="icon">
-              <img src={service.icon} alt="" />
+              <div className="icon">
+                <img src={service.icon} alt="" />
+              </div>
+              <h3>{service.title}</h3>
+              <p>{service.subTitle}</p>
             </div>
-            <h3>{service.title}</h3>
-            <p>{service.subTitle}</p>
-          </div>   
-        );
-      })}
-    </Section>
+          );
+        })}
+      </Section>
     </div>
   );
 }
