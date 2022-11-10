@@ -94,7 +94,7 @@ const Section = styled.section`
     .icon {
       img {
         width: 100%;
-        height: 12rem;
+        height: 11rem;
         border-radius: 20px;
       }
     }

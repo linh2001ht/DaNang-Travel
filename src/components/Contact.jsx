@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import avatarImage from "../assets/avatarImage.jpeg";
-export default function Testimonials() {
+export default function Contact() {
   return (
-    <Section id="testimonials">
+    <Section id="contact">
       <div className="title">
         <h2>Happy Customers</h2>
       </div>

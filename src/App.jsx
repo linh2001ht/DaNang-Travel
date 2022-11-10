@@ -4,17 +4,21 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Recommend from "./components/Recommend";
 import ScrollToTop from "./components/ScrollToTop";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Top from "./components/Top";
+import Subcribe from "./components/Subcribe";
 export default function App() {
   return (
     <div>
       <ScrollToTop />
       <Navbar />
       <Hero />
-      <Services />
+      <Top />
+      <About />
       <Recommend />
-      <Testimonials />
+      <Contact/>
+      <Subcribe />
       <Footer />
     </div>
   );

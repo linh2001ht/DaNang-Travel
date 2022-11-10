@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="#recommend">Blog</a>
           </li>
           <li>
-            <a href="#testimonials">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className="user">
@@ -55,7 +55,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#services" onClick={() => setNavbarState(false)}>
+            <a href="#about" onClick={() => setNavbarState(false)}>
               About Us
             </a>
           </li>
@@ -65,7 +65,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#testimonials" onClick={() => setNavbarState(false)}>
+            <a href="#contact" onClick={() => setNavbarState(false)}>
               Contact
             </a>
           </li>

@@ -9,9 +9,9 @@ export default function Hero() {
       </div>
       <div className="content">
         <div className="title">
-          <h1>TRAVEL TO EXPLORE</h1>
+          <h1>Find your next stay</h1>
           <p>
-            DA NANG NUMBER 1
+          Get the best prices on 2,000,000+ properties, worldwide
           </p>
         </div>
         <div className="search">
@@ -64,12 +64,14 @@ const Section = styled.section`
       h1 {
         font-size: 3rem;
         letter-spacing: 0.2rem;
+        font-family: DM Sans;
+        font-color: #FFFFFF;
       }
       p {
         text-align: center;
         padding: 0 30vw;
         margin-top: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 18px;
       }
     }
     .search {
