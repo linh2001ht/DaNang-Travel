@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import logo from "../assets/logo.png";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { VscChromeClose} from "react-icons/vsc";
-import { BsHandbag, BsPerson } from "react-icons/bs";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import logo from '../assets/logo.png';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { VscChromeClose } from 'react-icons/vsc';
+import { BsHandbag, BsPerson } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
   return (
@@ -12,7 +13,6 @@ export default function Navbar() {
         <div className="brand">
           <div className="container">
             <img src={logo} alt="" />
-            Travel
           </div>
           <div className="toggle">
             {navbarState ? (
@@ -25,27 +25,26 @@ export default function Navbar() {
 
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="#recommend">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className="user">
-        <div className="bag">
-        <BsHandbag></BsHandbag>
+          <div className="bag">
+            <BsHandbag></BsHandbag>
+          </div>
+          <div className="bag">
+            <BsPerson></BsPerson>
+          </div>
         </div>
-        <div className="bag">
-        <BsPerson></BsPerson>
-        </div>
-        </div>
-
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>
@@ -153,7 +152,7 @@ const ResponsiveNav = styled.div`
   display: flex;
   position: absolute;
   z-index: 1;
-  top: ${({ state }) => (state ? "50px" : "-400px")};
+  top: ${({ state }) => (state ? '50px' : '-400px')};
   background-color: white;
   height: 30vh;
   width: 100%;
