@@ -6,6 +6,7 @@ import img3 from "../assets/Linh.png";
 import img4 from "../assets/Phuc.png";
 import img5 from "../assets/Thai.png";
 import img6 from "../assets/Tri.png";
+import img7 from "../assets/about.png";
 
 export default function Services() {
   const data = [
@@ -49,7 +50,8 @@ export default function Services() {
   return (
     <div>
       <div id="about" style={{textAlign: "center", marginTop: "2rem"}}>
-        <h2>Meet Our Team</h2>
+        <img src={img7} alt="" />
+        <h2 style={{marginTop: "2rem"}}>Meet Our Team</h2>
       </div>
           <Section id="services">
       {data.map((service, index) => {
@@ -70,9 +72,9 @@ export default function Services() {
 }
 
 const Section = styled.section`
-  padding: 2rem 0;
+  padding: 2rem 10rem;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 
   .service {
@@ -94,7 +96,7 @@ const Section = styled.section`
     .icon {
       img {
         width: 100%;
-        height: 11rem;
+        height: 250px;
         border-radius: 20px;
       }
     }

@@ -23,7 +23,7 @@ export default function Subcribe() {
 }
 
 const Section = styled.section`
-  padding: 2rem 6rem;
+  padding: 2rem 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   img {

@@ -78,6 +78,8 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: -5px;
   .brand {
     .container {
       cursor: pointer;
@@ -86,7 +88,6 @@ const Nav = styled.nav`
       align-items: center;
       gap: 0.4rem;
       font-size: 1.2rem;
-      font-weight: 900;
       text-transform: uppercase;
     }
     .toggle {
@@ -100,17 +101,12 @@ const Nav = styled.nav`
     li {
       a {
         text-decoration: none;
-        color: #0077b6;
+        color: #232323;
         font-size: 1.2rem;
+        font-weight: bold;
         transition: 0.1s ease-in-out;
         &:hover {
-          color: #023e8a;
-        }
-      }
-      &:first-of-type {
-        a {
-          color: #023e8a;
-          font-weight: 900;
+          color: #3B71FE;
         }
       }
     }
